@@ -1,1 +1,12 @@
+<script src="/socket.io/socket.io.json"></script>
+<script>
+    var socket = io();
+
+    socket.on('connect', (socket) => {
+        console.log('Connected');
+    });
+    socket.on('disconnect', (socket) => {
+        console.log('Disconnected');
+    });
+</script>
 <p>This works</p>
